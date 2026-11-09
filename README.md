@@ -18,7 +18,7 @@ An end-to-end, zero-egress regulatory compliance intelligence platform built nat
 
 \- Native User Interface: Streamlit in Snowflake front-end providing risk officers with executive metrics, semantic retrieval, and on-demand LLM audit tools.
 
-
+![Enterprise Compliance Intelligence Engine](Compliance%20Intelligence%20Engine.png)
 
 🛠️ Tech Stack
 
