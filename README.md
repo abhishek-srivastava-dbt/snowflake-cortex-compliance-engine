@@ -6,35 +6,35 @@ An end-to-end, zero-egress regulatory compliance intelligence platform built nat
 
 
 
-\## 📌 Architecture Highlights
+📌 Architecture Highlights
 
-\- \*\*Zero Data Egress:\*\* All vector embeddings (`AI\_EMBED`), cosine similarity ranking, and LLM evaluations (`AI\_COMPLETE`) execute strictly within Snowflake's trust perimeter—eliminating external third-party API exposure.
+\- Zero Data Egress: All vector embeddings (`AI\_EMBED`), cosine similarity ranking, and LLM evaluations (`AI\_COMPLETE`) execute strictly within Snowflake's trust perimeter—eliminating external third-party API exposure.
 
-\- \*\*FinOps \& Resource Governance:\*\* Configured a dedicated Snowflake Resource Monitor (`CORTEX\_DEV\_MONITOR`) with a monthly 5-credit quota and automated hard suspension triggers at 100% to guarantee cost predictability.
+\- FinOps \& Resource Governance: Configured a dedicated Snowflake Resource Monitor (`CORTEX\_DEV\_MONITOR`) with a monthly 5-credit quota and automated hard suspension triggers at 100% to guarantee cost predictability.
 
-\- \*\*Medallion Schema Design:\*\* Isolates raw ingested clauses (`RAW\_DOCS`) from immutable compliance violation logs (`AUDIT\_GOLD`) under least-privilege RBAC (`COMPLIANCE\_AI\_ADMIN`).
+\- Medallion Schema Design: Isolates raw ingested clauses (`RAW\_DOCS`) from immutable compliance violation logs (`AUDIT\_GOLD`) under least-privilege RBAC (`COMPLIANCE\_AI\_ADMIN`).
 
-\- \*\*Autonomous CLI Orchestration:\*\* Automated database provisioning and vector search execution via the Snowflake Cortex Code CLI (CoCo) agent framework.
+\- Autonomous CLI Orchestration: Automated database provisioning and vector search execution via the Snowflake Cortex Code CLI (CoCo) agent framework.
 
-\- \*\*Native User Interface:\*\* Streamlit in Snowflake front-end providing risk officers with executive metrics, semantic retrieval, and on-demand LLM audit tools.
-
-
-
-\## 🛠️ Tech Stack
-
-\- \*\*Data Platform:\*\* Snowflake (Medallion Architecture)
-
-\- \*\*AI Functions:\*\* `AI\_EMBED`, `VECTOR\_COSINE\_SIMILARITY`, `AI\_COMPLETE`
-
-\- \*\*Models:\*\* `snowflake-arctic-embed-m` (768-dim), `llama3.1-70b`
-
-\- \*\*UI \& Analytics:\*\* Streamlit in Snowflake, Snowpark Python
-
-\- \*\*Orchestration Tooling:\*\* Snowflake Cortex Code CLI
+\- Native User Interface: Streamlit in Snowflake front-end providing risk officers with executive metrics, semantic retrieval, and on-demand LLM audit tools.
 
 
 
-\## 📂 Repository Structure
+🛠️ Tech Stack
+
+\- Data Platform: Snowflake (Medallion Architecture)
+
+\- AI Functions: `AI\_EMBED`, `VECTOR\_COSINE\_SIMILARITY`, `AI\_COMPLETE`
+
+\- Models: `snowflake-arctic-embed-m` (768-dim), `llama3.1-70b`
+
+\- UI \& Analytics: Streamlit in Snowflake, Snowpark Python
+
+\- Orchestration Tooling: Snowflake Cortex Code CLI
+
+
+
+📂 Repository Structure
 
 ```text
 
